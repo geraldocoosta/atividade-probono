@@ -3,7 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 
 import logoProbono from './img/logo-probono.png';
 import SentencasComponent from './componentes/sentencasComponent/SentencasComponent';
-import { FormDispositivoComponent, FormComponent } from './componentes/formComponent/FormComponents';
+import { FormDispositivoComponent } from './componentes/formComponent/FormComponents';
 
 class App extends React.Component {
   render() {
@@ -14,8 +14,8 @@ class App extends React.Component {
         </header>
         <Switch>
           <Route exact path="/" component={SentencasComponent} />
-          <Route path="/info/dispositivo/:id" component={FormDispositivoComponent} />
-          <Route path="/info/:id" component={FormComponent} />
+          <Route path="/create/dispositivo" component={FormDispositivoComponent} />
+          <Route path="/create/" component={FormDispositivoComponent} />
         </Switch>
       </div>
     );

@@ -22,7 +22,7 @@ export default function InputTextArea(props) {
         <div className="flex-row label-form">
           {label}
         </div>
-        <textarea id={name} className="textarea-form" value={value} name={name} onChange={onChange} />
+        <textarea id={name} className="textarea-form" required value={value} name={name} onChange={onChange} />
       </label>
     </div>
   );

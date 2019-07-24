@@ -20,16 +20,15 @@ class ModalDispositivoComponent extends React.Component {
   }
 
   render() {
-    const { exibirModal, infos, label } = this.props;
+    const { exibirModal, label, infos } = this.props;
     return (
-      <div className={`modal-dispositivo ${exibirModal ? 'exibir-modal' : ''}`}>
+      <div className={`modal ${exibirModal ? 'exibir-modal' : ''}`}>
         <header className="header-modal flex-row flex-space-between center-item">
           <h1>Sentença</h1>
-          <p>{`#${infos.id}`}</p>
         </header>
         <div className="flex-column align-center flex-space-around body-modal">
           <p>{label}</p>
-          <ButtonModalDispositivo infos={infos} />
+          <ButtonModalDispositivo dados={infos} />
         </div>
       </div>
     );
@@ -38,17 +37,6 @@ class ModalDispositivoComponent extends React.Component {
 
 ModalDispositivoComponent.propTypes = {
   exibirModal: PropTypes.bool.isRequired,
-  infos: PropTypes.shape({
-    id: PropTypes.string,
-    createdAt: PropTypes.string,
-    user: PropTypes.string,
-    userCPF: PropTypes.string,
-    exAdverso: PropTypes.string,
-    userEmail: PropTypes.string,
-    userPhone: PropTypes.string,
-    processNumber: PropTypes.number,
-    lawsuit: PropTypes.number,
-  }).isRequired,
   label: PropTypes.string.isRequired,
 };
 

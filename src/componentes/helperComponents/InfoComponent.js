@@ -25,7 +25,7 @@ export default function InfoComponent(props) {
   };
 
   return (
-    <div className="flex-row flex-space-between row-infos">
+    <div className="flex-row flex-space-between row-infos margin-top-row-info">
       <p className="primary-info infos">
         {`${primaryInfoLabel}: ${primaryInfo}`}
       </p>

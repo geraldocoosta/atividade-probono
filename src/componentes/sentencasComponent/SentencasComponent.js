@@ -21,9 +21,10 @@ class SentencasComponent extends Component {
     this.setState({
       historicOn: historicOn,
     });
+    this.getData();
   }
 
-  async componentDidMount() {
+  getData = async () => {
     try {
       const responseCase = await Api.get('/lawsuits');
       const responseDetails = await Api.get('/lawsuitDetails');
@@ -43,7 +44,7 @@ class SentencasComponent extends Component {
     if (historicOn) {
       return <HistoricComponent sentencas={sentencas} />;
     }
-    return <NovoComponent sentencas={sentencas} />;
+    return <NovoComponent />;
   }
 
 
