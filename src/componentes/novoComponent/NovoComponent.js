@@ -3,18 +3,17 @@ import PropTypes from 'prop-types';
 
 import BoxSentencasComponent from '../boxSentencaComponent/BoxSentencasComponent';
 
-class NovoComponent extends React.Component {
-  render() {
-    const { sentencas } = this.props;
-    return (
-      <BoxSentencasComponent sentencas={sentencas} origin="novo" />
-    );
-  }
+function NovoComponent(props) {
+  NovoComponent.propTypes = {
+    sentencas: PropTypes.arrayOf(
+      PropTypes.object,
+    ).isRequired,
+  };
+  const { sentencas } = props;
+  return (
+    <BoxSentencasComponent sentencas={sentencas} origin="novo" />
+  );
 }
-NovoComponent.propTypes = {
-  sentencas: PropTypes.arrayOf(
-    PropTypes.object,
-  ).isRequired,
-};
+
 
 export default NovoComponent;

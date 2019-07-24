@@ -23,7 +23,7 @@ export default function BodyBoxHistoric(props) {
     const { acontecera, aconteceu, dispositivo } = item;
     if (acontecera && aconteceu && dispositivo) {
       return (
-        <div class="text-details">
+        <div className="text-details">
           <h2>Dispositivo:</h2>
           <p>{dispositivo}</p>
           <h2>O que aconteceu?</h2>
@@ -40,7 +40,6 @@ export default function BodyBoxHistoric(props) {
   const originHistoric = props.origin === "historic";
 
   const notHistoricComponents = () => {
-    console.log(originHistoric);
     if (originHistoric) {
       return null;
     }
