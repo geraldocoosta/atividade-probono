@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch, Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './app.css';
+
+import logoProbono from './img/logo-probono.png';
+import SentencasComponent from './componentes/sentencasComponent/SentencasComponent';
+import { FormDispositivoComponent, FormComponent } from './componentes/formComponent/FormComponents';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <header className="header">
+          <Link to="/"><img className="logo" src={logoProbono} alt="probono" /></Link>
+        </header>
+        <Switch>
+          <Route exact path="/" component={SentencasComponent} />
+          <Route path="/info/dispositivo/:id" component={FormDispositivoComponent} />
+          <Route path="/info/:id" component={FormComponent} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,19 @@
+.label-form{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.textarea-form{
+  width: 100%;
+  height: 75%;
+}
+
+.label-textarea{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.textarea-div-form{
+  height: 150px;
+}

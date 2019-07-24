@@ -1,0 +1,99 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.setenca-box {
+  box-shadow: 0 0 2px #000;
+  margin-bottom: 1rem;
+}
+
+.setenca-box-inicial {
+  width: 720px;
+  height: 250px;
+}
+
+.setenca-box-form {
+  width: 720px;
+  height: 880px;
+  margin-top: 5%;  
+}
+
+.button-primary{
+  color: #fff;
+  background-color: #4b00cb;
+}
+
+.button-secundary{
+  color: #4b00cb;
+  background-color: #11ffd0;
+}
+
+.button-sentenca-box{
+  width: 40%;
+  padding: 16px 0;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  box-shadow: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-sentenca-box {
+  background-color: #4b00cb;
+  height: 20%;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.header-sentenca-form {
+  height: 6%;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  justify-content: space-around
+}
+
+.flex-center{
+  justify-content: center;
+}
+
+.titulo-setenca-box {
+  margin-left: 1rem;
+}
+
+.numero-setenca-box {
+  margin-right: 1rem;
+}
+
+.primary-info {
+  flex: 0 0 60%;
+}
+
+.secundary-info{
+  flex: 0 0 35%;
+}
+
+.infos{
+  border-left: 2px solid #4b00cb;
+  border-bottom: 2px solid #4b00cb;
+  text-indent: 0.7rem;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.row-infos {
+  margin-bottom: 1rem;
+}
