@@ -1,15 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import BoxSetencas from '../boxSetenca/BoxSentencas';
-
+import BoxSentencasComponent from '../boxSentencaComponent/BoxSentencasComponent';
 
 class HistoricComponent extends React.Component {
   render() {
     const { sentencas } = this.props;
     return (
-      <BoxSetencas sentencas={sentencas} origin='historic' />
+      <BoxSentencasComponent sentencas={sentencas} origin='historic' />
     );
   }
 }
+HistoricComponent.propTypes = {
+  sentencas: PropTypes.arrayOf(
+    PropTypes.object,
+  ).isRequired,
+};
 
 export default HistoricComponent;

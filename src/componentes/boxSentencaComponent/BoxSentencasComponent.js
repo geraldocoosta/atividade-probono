@@ -1,12 +1,10 @@
 import React from 'react';
 
-import Pagination from '../pagination/Pagination'
+import PaginationComponent from '../paginationComponent/PaginationComponent'
 import { ButtonNovoComponent, ButtonHitoricComponent } from '../buttonsComponents/ButtonsComponent';
 import InfoComponent from '../helperComponents/InfoComponent';
 
-import './styles.css';
-
-export default class BoxSetencas extends React.Component {
+export default class BoxSentencasComponent extends React.Component {
 
   constructor(props) {
     super(props);
@@ -62,7 +60,7 @@ export default class BoxSetencas extends React.Component {
             )
           }
         </div>
-        <Pagination items={sentencas} onChangePage={this.onChangePage} />
+        <PaginationComponent items={sentencas} onChangePage={this.onChangePage} />
       </div>
     )
   }

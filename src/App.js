@@ -1,8 +1,6 @@
 import React from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
 
-import './app.css';
-
 import logoProbono from './img/logo-probono.png';
 import SentencasComponent from './componentes/sentencasComponent/SentencasComponent';
 import { FormDispositivoComponent, FormComponent } from './componentes/formComponent/FormComponents';

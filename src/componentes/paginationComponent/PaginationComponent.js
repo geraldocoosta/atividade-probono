@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './styles.css';
-
 const propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.object,
@@ -18,7 +16,7 @@ const defaultProps = {
   pageSize: 5,
 };
 
-class Pagination extends React.Component {
+class PaginationComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { pager: {} };
@@ -146,6 +144,6 @@ class Pagination extends React.Component {
   }
 }
 
-Pagination.propTypes = propTypes;
-Pagination.defaultProps = defaultProps;
-export default Pagination;
+PaginationComponent.propTypes = propTypes;
+PaginationComponent.defaultProps = defaultProps;
+export default PaginationComponent;

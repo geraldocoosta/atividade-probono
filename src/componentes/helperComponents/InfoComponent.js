@@ -12,14 +12,26 @@ export default function InfoComponent(props) {
   InfoComponent.propTypes = {
     primaryInfoLabel: PropTypes.string.isRequired,
     secundaryInfoLabel: PropTypes.string.isRequired,
-    primaryInfo: PropTypes.string.isRequired,
-    secundaryInfo: PropTypes.string.isRequired,
+    primaryInfo: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+      PropTypes.any,
+    ]).isRequired,
+    secundaryInfo: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+      PropTypes.any,
+    ]).isRequired,
   };
 
   return (
     <div className="flex-row flex-space-between row-infos">
-      <p className="primary-info infos">{primaryInfoLabel}: {primaryInfo}</p>
-      <p className="secundary-info infos">{secundaryInfoLabel}: {secundaryInfo}</p>
+      <p className="primary-info infos">
+        {`${primaryInfoLabel}: ${primaryInfo}`}
+      </p>
+      <p className="secundary-info infos">
+        {`${secundaryInfoLabel}: ${secundaryInfo}`}
+      </p>
     </div>
   );
 }

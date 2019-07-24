@@ -3,9 +3,8 @@ import mergeByKey from 'array-merge-by-key';
 
 import Api from '../../api/Api';
 
-
 import HistoricComponent from '../historicComponent/HistoricComponent';
-import ToogleInicial from '../toogleInicial/ToogleInicial';
+import ToogleInicialComponent from '../toogleInicialComponent/ToogleInicialComponent';
 import NovoComponent from '../novoComponent/NovoComponent';
 
 class SentencasComponent extends Component {
@@ -53,7 +52,7 @@ class SentencasComponent extends Component {
     return (
       <div>
         <div className="flex-center flex-row">
-          <ToogleInicial onChange={this.handleChange} />
+          <ToogleInicialComponent onChange={this.handleChange} />
         </div>
         {this.renderCondicional()}
       </div>

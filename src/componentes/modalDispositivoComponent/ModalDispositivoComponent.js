@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 import { ButtonModalDispositivo } from '../buttonsComponents/ButtonsComponent';
 
-import './styles.css';
-
-class ModalDispositivo extends React.Component {
+class ModalDispositivoComponent extends React.Component {
   componentDidUpdate() {
     const { exibirModal } = this.props;
     const body = document.querySelector('body');
@@ -38,7 +36,7 @@ class ModalDispositivo extends React.Component {
   }
 }
 
-ModalDispositivo.propTypes = {
+ModalDispositivoComponent.propTypes = {
   exibirModal: PropTypes.bool.isRequired,
   infos: PropTypes.shape({
     id: PropTypes.string,
@@ -54,4 +52,4 @@ ModalDispositivo.propTypes = {
   label: PropTypes.string.isRequired,
 };
 
-export default ModalDispositivo;
+export default ModalDispositivoComponent;

@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './style.css';
-
-function ToogleInicial(props) {
+function ToogleInicialComponent(props) {
   const { onChange } = props;
 
-  ToogleInicial.propTypes = {
+  ToogleInicialComponent.propTypes = {
     onChange: PropTypes.func.isRequired,
   };
 
@@ -27,4 +25,4 @@ function ToogleInicial(props) {
   );
 }
 
-export default ToogleInicial;
+export default ToogleInicialComponent;

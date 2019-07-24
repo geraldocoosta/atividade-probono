@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ModalDispositivo from '../modalDispositivo/ModalDispositivo';
+import ModalDispositivo from '../modalDispositivoComponent/ModalDispositivoComponent';
 
 export class ButtonNovoComponent extends React.Component {
 
